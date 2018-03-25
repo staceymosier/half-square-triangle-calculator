@@ -10,4 +10,6 @@ A popular method of making half-square-triangles is to lay 2 squares, right-side
 
 This simple static project, with some light JavaScript, will provide a calculator to determine what size squares to begin with, so that you can achieve the desired number of columns and rows for your quilt size.
 
+See progress at http://hst.staceymosier.com/
+
 Happy Quilting!

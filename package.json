@@ -1,0 +1,25 @@
+{
+  "name": "half-square-triangle-calculator",
+  "version": "1.0.0",
+  "description": "Half Square Triangle Calculator for Quilting Projects",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tester"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staceymosier/half-square-triangle-calculator.git"
+  },
+  "author": "Stacey Mosier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staceymosier/half-square-triangle-calculator/issues"
+  },
+  "homepage": "https://github.com/staceymosier/half-square-triangle-calculator#readme",
+  "dependencies": {
+    "bulma": "^0.6.2"
+  }
+}
