@@ -11,18 +11,34 @@
   <body>
    <header> Header </header>
 
+   let hstMethodType = document.getElementById("hst-method-type");
+
    <section class="section main">
      <div class="container">
-       <header>Quilt Setup</header>
-       <label for="qsize">Size</label>
-       <select name="qsize" id="qsize"></select>
-       <label for="qcolumns">Columns</label>
-       <input name="qcolumns" value="5" />
-       <input name="qrows" value="6" />
+       <header><h2>Let's get started!</h2></header>
+
+       <label for="quilt-size">Quilt Size</label>
+       <select name="quilt-size" id="quilt-size"></select>
+
+       <label for="border-size">Border Size (inch width)</label>
+       <input name="border-size" id="border-size" value="3" />
+
+       <label for="column-count">Number of Columns</label>
+       <input name="column-count" id="column-count" value="5" />
+
+      <label for="row-count">Number of Rows</label>
+      <input name="row-count" id="row-count" value="6" />
+
+      <label for="hst-method-type">HST Method</label>
+      <select name="hst-method-type" id="quilt-size"></select>
+
      </div>
    </section>
 
-  <footer> Footer </footer>
-  <script src="app.js"></script>
+  <footer>
+    Information goes here!
+  </footer>
+
+  <script src="/app.js"></script>
   </body>
 </html>
