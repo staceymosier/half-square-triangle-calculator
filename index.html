@@ -14,22 +14,24 @@
    <section class="section main">
      <div class="container">
        <header><h2>Let's get started!</h2></header>
-
-       <label for="quilt-size">Quilt Size</label>
-       <select name="quilt-size" id="quilt-size"></select>
-
-       <label for="border-size">Border Size (inch width)</label>
-       <input name="border-size" id="border-size" value="3" />
-
-       <label for="column-count">Number of Columns</label>
-       <input name="column-count" id="column-count" value="5" />
-
-      <label for="row-count">Number of Rows</label>
-      <input name="row-count" id="row-count" value="6" />
-
-      <label for="hst-method-type">HST Method</label>
-      <select name="hst-method-type" id="quilt-size"></select>
-
+       <div>
+         <label for="quilt-size">Quilt Size</label> <select name="quilt-size" id="quilt-size" required autofocus></select>
+      </div>
+      <div>
+         <label for="border-size">Border Size (inch width)</label> <input type="number" name="border-size" id="border-size" value="0" />
+       </div>
+       <div>
+         <label for="column-count">Number of Columns</label> <input type="number" name="column-count" id="column-count" value="5" required/>
+       </div>
+       <div>
+        <label for="row-count">Number of Rows</label> <input type="number" name="row-count" id="row-count" value="6" required />
+      </div>
+      <div>
+        <label for="hst-method-type">HST Method</label> <select name="hst-method-type" id="quilt-size" required></select>
+      </div>
+      <div>
+        <button name="go" id="quilt-go">Go!</button>
+      </div>
      </div>
    </section>
 
