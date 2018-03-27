@@ -35,9 +35,13 @@ let rows = document.getElementById("row-count");
 
 // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
 // calculating block size
-let hst2_finished;
-let hs2_total = hs2_finished + 0.875;
+let hst2_finish;
+let hs2_start = hs2_finish + 0.875;
 
 // Alternative: To make 4 HST units
-let hst4_finished;
-let hs4_total = (0.7071 * hs4_finished) - 0.3535;
+let hst4_finish;
+let hs4_start = (0.7071 * hs4_finish) - 0.3535;
+
+// Octo-Awesome Add .0875 and double it
+let hs8_finish;
+let hs8_start = ( hs8_finish + 0.877 ) * 2;
