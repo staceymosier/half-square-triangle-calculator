@@ -8,6 +8,27 @@ function buildList(arr, parent){
   );
 }
 
+function returnStarterSize(finish, hstmethod){
+
+  if ( hstmethod === 2 ) {
+    // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
+    return finish + 0.875;
+  }
+
+  if ( hstmethod === 4 ) {
+    // Alternative: To make 4 HST units
+    // note: To figure out the math, divide the unfinished HST size by 0.64.
+    return (0.7071 * finish) - 0.3535;
+  }
+
+  if ( hstmethod === 8 ){
+    // Octo-Awesome Add .0875 and double it
+    return (finish + 0.877) * 2;
+  }
+
+  return null;
+}
+
 /* set up quilt size */
 let quiltsizes = [
   { text: "Twin", value: [63, 87] },
@@ -32,16 +53,10 @@ let hstMethodType = document.getElementById("hst-method-type");
 let bordersize = document.getElementById("border-size");
 let columns = document.getElementById("column-count");
 let rows = document.getElementById("row-count");
+let resultElem = document.getElementById("results");
 
-// Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
-// calculating block size
-let hst2_finish;
-let hs2_start = hs2_finish + 0.875;
-
-// Alternative: To make 4 HST units
-let hst4_finish;
-let hs4_start = (0.7071 * hs4_finish) - 0.3535;
-
-// Octo-Awesome Add .0875 and double it
-let hs8_finish;
-let hs8_start = ( hs8_finish + 0.877 ) * 2;
+// result
+let finish = 5;
+let hstmethod = 2;
+let starterSize = returnStarterSize(finish, hstmethod);
+resultElem.innerHTML =  "To make 2 HSTs, your starter block size is " + starterSize + "\"";
