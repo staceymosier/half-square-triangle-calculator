@@ -1,5 +1,11 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+@import "../../node_modules/bulma/bulma.sass";
+@import url("https://use.typekit.net/svf0rss.css");
+
 $slate: #e6e9ec;
 
 body {
-  background-color: $slate
+  background-color: $slate;
 }
