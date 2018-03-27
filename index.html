@@ -15,43 +15,98 @@
      </div>
    </header>
 
-   <section class="section main">
-     <div class="container content">
-        <div class="columns">
-          <div class="column">
-            <h3>Let's get started!</h3>
-            <div>
-               <label for="quilt-size">Quilt Size</label>
-               <select name="quilt-size" id="quilt-size" required autofocus></select>
+  <section class="section main">
+    <div class="container content">
+      <div class="columns">
+        <div class="column">
+          <h3>Let's get started!</h3>
+          <!-- begin quilt form -->
+
+         <!-- i dont know why bulma requires so many divs -->
+          <div class="field is-horizontal quilt-size">
+            <div class="field-label is-normal">
+              <label class="label" for="quilt-size">Quilt Size</label>
             </div>
-            <div>
-               <label for="border-size">Border Size (inch width)</label>
-               <input type="number" name="border-size" id="border-size" value="0" />
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select name="quilt-size" id="quilt-size" required autofocus>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end quilt size-->
+
+          <div class="field is-horizontal border-size">
+            <div class="field-label is-normal">
+              <label class="label" for="border-size">Border Size (inch width)</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="border-size" id="border-size" value="0" />
+                </div>
+              </div>
+            </div>
+          </div><!--//.end border size -->
+
+          <div class="field is-horizontal column-count">
+            <div class="field-label is-normal">
+              <label class="label" for="column-count"># of Column</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="column-count" id="column-count" value="5" required/>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end column-count -->
+
+          <div class="field is-horizontal row-count">
+            <div class="field-label is-normal">
+              <label class="label" for="row-count"># of Rows</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="row-count" id="row-count" value="6" required/>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end row-count -->
+
+           <div class="field is-horizontal hst-method-type">
+             <div class="field-label is-normal">
+               <label class="label" for="hst-method-type">HST Method</label>
              </div>
-             <div>
-               <label for="column-count">Number of Columns</label>
-               <input type="number" name="column-count" id="column-count" value="5" required/>
+             <div class="field-body">
+               <div class="field is-narrow">
+                 <div class="control">
+                   <div class="select is-fullwidth">
+                     <select name="hst-method-type" id="hst-method-type" required autofocus>
+                     </select>
+                   </div>
+                 </div>
+               </div>
              </div>
-             <div>
-              <label for="row-count">Number of Rows</label>
-              <input type="number" name="row-count" id="row-count" value="6" required />
-            </div>
-            <div>
-              <label for="hst-method-type">HST Method</label>
-              <select name="hst-method-type" id="quilt-size" required></select>
-            </div>
-            <div>
-              <button name="go" id="quilt-go">Go!</button>
-            </div>
+           </div><!--//.end hst-method-type -->
+
+           <button type="submit" class="button is-primary">Go!</button>
+
+          <!-- end quilt form -->
         </div><!--//.column -->
 
         <div class="column">
           <h3> Here it is! </h3>
           <div> Quilt Area </div>
         </div><!--//.column -->
+
       </div><!--//.columns -->
     </div>
-   </section>
+  </section>
 
   <footer class="footer section">
     <div class="container">
