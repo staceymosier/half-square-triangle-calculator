@@ -11,8 +11,11 @@
   <body>
    <header class="section">
      <div class="container">
-       <h1 class="display title">Half Square Triangle Magic</h1>
-       <p>About this</p>
+       <h1 class="display title">Half-Square Triangle Magic</h1>
+       <p>Use the form below to calculate which size blocks you
+       should begin with in order to make half-square triangle blocks.</p>
+       <p>There are currently 3 methods supported for calculating your starter squares.</p>
+       <p>You can create 2, 4 or 8 half square triangles starting with 2 larger squares of fabric.</p>
      </div>
    </header>
 
@@ -24,7 +27,20 @@
           <!-- begin quilt form -->
 
          <!-- i dont know why bulma requires so many divs -->
-          <div class="field is-horizontal quilt-size">
+         <div class="field is-horizontal block-size">
+           <div class="field-label is-normal">
+             <label class="label" for="block-size">Block Size</label>
+           </div>
+           <div class="field-body">
+             <div class="field is-narrow">
+               <div class="control">
+                 <input class="input" type="text" name="block-size" id="block-size" value="5">
+               </div>
+             </div>
+           </div>
+         </div><!--//.end block size-->
+
+          <div class="field is-horizontal quilt-size is-hidden">
             <div class="field-label is-normal">
               <label class="label" for="quilt-size">Quilt Size</label>
             </div>
@@ -32,7 +48,7 @@
               <div class="field is-narrow">
                 <div class="control">
                   <div class="select is-fullwidth">
-                    <select name="quilt-size" id="quilt-size" required autofocus>
+                    <select name="quilt-size" id="quilt-size">
                     </select>
                   </div>
                 </div>
@@ -117,7 +133,25 @@
 
   <footer class="footer section">
     <div class="container">
-      Information goes here!
+      <h4 class="title display">Shout Outs</h4>
+      <p>To the quilters and bloggers that have already made this math available </p>
+      <ul>
+        <li>
+          <a href="http://www.blossomheartquilts.com/2012/07/hst-tutorial-and-maths-formula/">
+            blossomheartquilts.com
+          </a>
+        </li>
+        <li><a href="https://suzyquilts.com/half-square-triangles-tutorial/">suzyquilts.com</a></li>
+      </ul>
+
+      <h4 class="title display">&amp; Inspiration</h4>
+      <p>From beautiful hand-made quilts made mostly of HST</p>
+      <ul>
+        <li><a href="http://hummingbirdthread.com/2016/01/31/feed-company-half-square-triangle-quilt/">
+          Feed Company Half-Square Trinalge Quilt
+        </a>
+      </li>
+      </ul>
     </div>
   </footer>
 
