@@ -6,6 +6,5 @@
 
 $slate: #e6e9ec;
 
-body {
-  background-color: $slate;
-}
+@import "./elements.scss";
+@import "./quilt.scss";

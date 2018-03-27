@@ -1,0 +1,13 @@
+/* bulma overrides, do it right? */
+.is-centered {
+  text-align:center;
+}
+.is-skinny {
+  padding: 10px;
+}
+.tag:hover {
+  background-color: $lightyellow;
+}
+.hero.is-dark {
+  background-color: $dark;
+}

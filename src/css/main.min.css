@@ -6432,4 +6432,7 @@ label.panel-block {
 body {
   background-color: #e6e9ec; }
 
+.quilt .quilt-block {
+  shape-outside: circle(250px at 50% 50%) padding-box; }
+
 /*# sourceMappingURL=main.min.css.map */

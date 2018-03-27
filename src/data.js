@@ -15,7 +15,8 @@ let quiltsizes = [
 /* method to make 2 or 4 HST */
 let hstMethods = [
   { text: "Make 2 HSTs with 2 blocks", value: 2 },
-  { text: "Make 4 HSTs with 2 blocks", value: 4 }
+  { text: "Make 4 HSTs with 2 blocks", value: 4 },
+  { text: "Make 8 HSTs with 2 blocks", value: 8 }
 ]
 
 /* user input for quilt */
