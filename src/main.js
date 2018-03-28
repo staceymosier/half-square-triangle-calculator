@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import form from './form.js';
 
 function component() {
   var element = document.createElement('div');
@@ -7,3 +8,4 @@ function component() {
 }
 
 document.body.appendChild(component());
+form.buildForm();

@@ -1,0 +1,15 @@
+{
+  "sizes" : [{
+    "Twin": "[63, 87]",
+    "Twin XL": "[63, 92]",
+    "Full": "[78, 87]",
+    "Queen": "[ 84, 92]",
+    "King": "[102, 92]",
+    "California King": "[ 96,96]"
+  }],
+  "hstMethods": [{
+    "Make 2 HSTs with 2 blocks": "2",
+    "Make 4 HSTs with 2 blocks": "4",
+    "Make 8 HSTs with 2 blocks": "8"
+  }]
+}
