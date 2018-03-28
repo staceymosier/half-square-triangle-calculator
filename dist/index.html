@@ -1,12 +1,168 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Half Square Triangles Calculator - hst.staceymosier.com</title>
     <meta name="description" content="A simple site to assist in the math needed for creating half square triangles for your quilt."/>
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-    <script src="bundle.js"></script>
+   <header class="section">
+     <div class="container">
+       <div class="columns">
+         <div class="is-three-fifths is-offset-one-fifth column">
+           <h1 class="display title is-centered">Half-Square Triangle Magic</h1>
+           <p>Use the form below to calculate which size blocks you
+           should begin with in order to make half-square triangle blocks.</p>
+           <p>There are currently 3 methods supported for calculating your starter squares.</p>
+           <p>You can create 2, 4 or 8 half square triangles starting with 2 larger squares of fabric.</p>
+         </div>
+       </div>
+     </div>
+   </header>
+
+  <section class="section main">
+    <div class="container content">
+      <div class="columns">
+        <div class="column">
+          <h3 class="display">Let's get started!</h3>
+          <!-- begin quilt form -->
+
+         <!-- i dont know why bulma requires so many divs -->
+         <div class="field is-horizontal block-size">
+           <div class="field-label is-normal">
+             <label class="label" for="block-size">Block Size</label>
+           </div>
+           <div class="field-body">
+             <div class="field is-narrow">
+               <div class="control">
+                 <input class="input" type="text" name="block-size" id="block-size" value="5">
+               </div>
+             </div>
+           </div>
+         </div><!--//.end block size-->
+
+          <div class="field is-horizontal quilt-size is-hidden">
+            <div class="field-label is-normal">
+              <label class="label" for="quilt-size">Quilt Size</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select name="quilt-size" id="quilt-size">
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end quilt size-->
+
+          <div class="field is-horizontal border-size">
+            <div class="field-label is-normal">
+              <label class="label" for="border-size">Border Size (inch width)</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="border-size" id="border-size" value="0" />
+                </div>
+              </div>
+            </div>
+          </div><!--//.end border size -->
+
+          <div class="field is-horizontal column-count">
+            <div class="field-label is-normal">
+              <label class="label" for="column-count"># of Column</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="column-count" id="column-count" value="5" required/>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end column-count -->
+
+          <div class="field is-horizontal row-count">
+            <div class="field-label is-normal">
+              <label class="label" for="row-count"># of Rows</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="row-count" id="row-count" value="6" required/>
+                </div>
+              </div>
+            </div>
+          </div><!--//.end row-count -->
+
+           <div class="field is-horizontal hst-method-type">
+             <div class="field-label is-normal">
+               <label class="label" for="hst-method-type">HST Method</label>
+             </div>
+             <div class="field-body">
+               <div class="field is-narrow">
+                 <div class="control">
+                   <div class="select is-fullwidth">
+                     <select name="hst-method-type" id="hst-method-type" required autofocus>
+                     </select>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div><!--//.end hst-method-type -->
+
+           <button type="submit" class="button is-primary">Go!</button>
+
+          <!-- end quilt form -->
+        </div><!--//.column -->
+
+        <div class="column">
+          <h3 class="display"> Here it is! </h3>
+          <div id="results" class="result block">
+          </div>
+          <div class="quilt">
+            <div class="border">
+              <div class="quilt-block"></div>
+            </div>
+          </div>
+        </div><!--//.column -->
+
+      </div><!--//.columns -->
+    </div>
+  </section>
+
+  <footer class="footer section">
+    <div class="container">
+      <div class="columns">
+        <div class="column shout-outs">
+          <h4 class="title display">Shout Outs</h4>
+          <p>To the quilters and bloggers that have already made this math available </p>
+          <ul>
+            <li>
+              <a href="http://www.blossomheartquilts.com/2012/07/hst-tutorial-and-maths-formula/">
+                blossomheartquilts.com
+              </a>
+            </li>
+            <li><a href="https://suzyquilts.com/half-square-triangles-tutorial/">suzyquilts.com</a></li>
+          </ul>
+        </div><!--//.column-->
+        <div class="column inspiration">
+          <h4 class="title display">&amp; Inspiration</h4>
+          <p>From beautiful hand-made quilts made mostly of HST</p>
+          <ul>
+            <li><a href="http://hummingbirdthread.com/2016/01/31/feed-company-half-square-triangle-quilt/">
+              Feed Company Half-Square Trinalge Quilt
+            </a>
+          </li>
+          </ul>
+        </div><!--//.column-->
+      </div><!--//.columns -->
+    </div><!--//.container -->
+  </footer>
+  <script src="bundle.js"></script>
   </body>
 </html>
