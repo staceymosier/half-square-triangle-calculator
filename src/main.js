@@ -1,17 +1,11 @@
-var SystemJS = require('systemjs');
+import _ from 'lodash';
 
-SystemJS.import('./app/input.js').then(function (input) {
-  console.log('loaded input');
-});
+function component() {
+  var element = document.createElement('div');
 
-SystemJS.import('./app/draw.js').then(function (draw) {
-  console.log('loaded draw');
-});
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-SystemJS.import('./app/data.js').then(function (data) {
-  console.log('loaded data');
-});
+  return element;
+}
 
-/*
-buildList(qsizes, qsizeList);
-*/
+document.body.appendChild(component());

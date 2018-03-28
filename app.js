@@ -8,6 +8,7 @@ function buildList(arr, parent){
   );
 }
 
+
 function returnStarterSize(finish, hstmethod){
 
   if ( hstmethod === 2 ) {
@@ -57,6 +58,5 @@ let resultElem = document.getElementById("results");
 
 // result
 let finish = 5;
-let hstmethod = 2;
-let starterSize = returnStarterSize(finish, hstmethod);
+let starterSize = returnStarterSize(finish, 2);
 resultElem.innerHTML =  "To make 2 HSTs, your starter block size is " + starterSize + "\"";
