@@ -5,5 +5,6 @@ form.buildForm();
 
 let button = document.querySelector("#hst-go");
 button.addEventListener("click", ()=> {
+  console.log('Updating quilt!');
   quilt.buildQuilt();
 });
