@@ -1,3 +1,5 @@
+import n2f from 'num2fraction';
+
 const doMath = (startsize, hstmethod) => {
   if ( hstmethod === 2 ) {
     // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
