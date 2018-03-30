@@ -16,7 +16,7 @@ const buildQuilt = () => {
 
   /* results */
   var message = document.createElement("p");
-  message.innerHTML = "Your block finished size is " + result2Frac + " &quot;.";
+  message.innerHTML = result2Frac + "&quot; (" + result + ")";
   resultParent.appendChild(message);
 }
 
