@@ -29,17 +29,18 @@
         <div class="column">
           <h3 class="display">Let's get started!</h3>
           <!-- begin quilt form -->
+          <div><p>All values below are in inches.</p></div>
 
-         <!-- i dont know why bulma requires so many divs -->
-         <div class="field is-horizontal block-size">
-           <div class="field-label is-normal">
-             <label class="label" for="block-size">Block Size</label>
-           </div>
-           <div class="field-body">
-             <div class="field is-narrow">
-               <div class="control">
-                 <input class="input" type="text" name="block-size" id="block-size" value="5">
-               </div>
+          <!-- i dont know why bulma requires so many divs -->
+          <div class="field is-horizontal block-size">
+            <div class="field-label is-normal">
+              <label class="label" for="block-size">Finished Block Size</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-narrow">
+              <div class="control">
+                <input class="input" type="text" name="block-size" id="block-size" value="5">
+              </div>
              </div>
            </div>
          </div><!--//.end block size-->
@@ -62,7 +63,7 @@
 
           <div class="field is-horizontal border-size">
             <div class="field-label is-normal">
-              <label class="label" for="border-size">Border Size (inch width)</label>
+              <label class="label" for="border-size">Border Size</label>
             </div>
             <div class="field-body">
               <div class="field is-narrow">
@@ -75,7 +76,7 @@
 
           <div class="field is-horizontal column-count">
             <div class="field-label is-normal">
-              <label class="label" for="column-count"># of Column</label>
+              <label class="label" for="column-count">Columns</label>
             </div>
             <div class="field-body">
               <div class="field is-narrow">
@@ -88,7 +89,7 @@
 
           <div class="field is-horizontal row-count">
             <div class="field-label is-normal">
-              <label class="label" for="row-count"># of Rows</label>
+              <label class="label" for="row-count">Rows</label>
             </div>
             <div class="field-body">
               <div class="field is-narrow">
@@ -115,7 +116,7 @@
              </div>
            </div><!--//.end hst-method-type -->
 
-           <button type="submit" class="button is-primary">Go!</button>
+           <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
 
           <!-- end quilt form -->
         </div><!--//.column -->

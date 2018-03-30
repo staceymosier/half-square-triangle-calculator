@@ -4,10 +4,6 @@ import selector from "../util/select.js";
 let blocksize = document.getElementById("block-size");
 let quiltsize = document.getElementById("quilt-size");
 let hstMethodType = document.getElementById("hst-method-type");
-let bordersize = document.getElementById("border-size");
-let columns = document.getElementById("column-count");
-let rows = document.getElementById("row-count");
-let resultElem = document.getElementById("results");
 
 /* set up quilt sizes */
 let quiltsizes = [
