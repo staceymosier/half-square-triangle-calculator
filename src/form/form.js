@@ -17,9 +17,9 @@ let quiltsizes = [
 
 /* HST method */
 let hstMethods = [
-  { text: "Make 2 HSTs with 2 blocks", value: 2 },
-  { text: "Make 4 HSTs with 2 blocks", value: 4 },
-  { text: "Make 8 HSTs with 2 blocks", value: 8 }
+  { text: "Make 2 HSTs", value: 2 },
+  { text: "Make 4 HSTs", value: 4 },
+  { text: "Make 8 HSTs", value: 8 }
 ]
 
 const buildForm = () => {

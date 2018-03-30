@@ -28,8 +28,8 @@
       <div class="columns">
         <div class="column">
           <h3 class="display">Let's get started!</h3>
-          <!-- begin quilt form -->
-          <div><p>All values below are in inches.</p></div>
+
+          <div><em>All values below are in inches.</em></div>
 
           <!-- i dont know why bulma requires so many divs -->
           <div class="field is-horizontal block-size">
@@ -45,6 +45,25 @@
            </div>
          </div><!--//.end block size-->
 
+         <div class="field is-horizontal hst-method-type">
+           <div class="field-label is-normal">
+             <label class="label" for="hst-method-type">HST Method</label>
+           </div>
+           <div class="field-body">
+             <div class="field is-narrow">
+               <div class="control">
+                 <div class="select is-fullwidth">
+                   <select name="hst-method-type" id="hst-method-type">
+                   </select>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div><!--//.end hst-method-type -->
+         <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
+
+         <hr />
+         <h3 class="display">How many blocks will you need?</h3>
           <div class="field is-horizontal quilt-size">
             <div class="field-label is-normal">
               <label class="label" for="quilt-size">Quilt Size</label>
@@ -99,30 +118,13 @@
               </div>
             </div>
           </div><!--//.end row-count -->
-
-           <div class="field is-horizontal hst-method-type">
-             <div class="field-label is-normal">
-               <label class="label" for="hst-method-type">HST Method</label>
-             </div>
-             <div class="field-body">
-               <div class="field is-narrow">
-                 <div class="control">
-                   <div class="select is-fullwidth">
-                     <select name="hst-method-type" id="hst-method-type">
-                     </select>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div><!--//.end hst-method-type -->
-
-           <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
+          <button name="quilt-go" id="quilt-go" type="submit" class="button is-primary">Go!</button>
 
           <!-- end quilt form -->
         </div><!--//.column -->
 
         <div class="column">
-          <h3 class="display"> Here it is! </h3>
+          <h3 class="display"> Finished Blocks Results </h3>
           <div id="results" class="result block">
           </div>
           <div class="quilt">
