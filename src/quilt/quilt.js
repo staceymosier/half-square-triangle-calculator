@@ -7,14 +7,14 @@ let columns = document.getElementById("column-count").value;
 let blocksize = document.getElementById("block-size").value;
 let quiltsize = document.getElementById("quilt-size").value;
 let hstElem = document.getElementById("hst-method-type");
-let resultElem = document.getElementById("results");
+let resultParent = document.getElementById("results");
 
 const buildQuilt = () => {
   let result = hst.doMath(blocksize, 2);
-  let whole = Math.floor(result);
-  let decimal = n2f(result - whole);
-  let answer = whole + ' ' + decimal;
-  resultElem.innerHTML = "Your block finished size is " + answer + "&quot;.";
+  
+  var p = document.createElement("p");
+  var message = "Your block finished size is ___ &quot;.";
+  resultParent.appendChild(message);
 }
 
 // result

@@ -1,5 +1,4 @@
 const doMath = (startsize, hstmethod) => {
-
   if ( hstmethod === 2 ) {
     // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
     return startsize - 0.875;
@@ -17,6 +16,13 @@ const doMath = (startsize, hstmethod) => {
   }
 
   return 0;
-}
+};
 
-export default { doMath };
+const toFraction = (size) => {
+  let whole = Math.floor(size);
+  let decimal = n2f(size - whole);
+  let answer = whole + ' ' + decimal;
+  return answer;
+};
+
+export default { doMath, toFraction };
