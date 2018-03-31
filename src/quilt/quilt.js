@@ -2,23 +2,19 @@ import hst from "../util/math.js";
 
 const buildQuilt = () => {
 
-  /* elems */
-  let startBlockSize = document.querySelector("#block-size").value;
+  // form/doc input
+  let startSize = document.querySelector("#block-size").value;
   let hstElem = document.querySelector("#hst-method-type").value;
   let resultParent = document.querySelector("#results");
   let message = document.createElement("p");
 
-  /* reset previous messages */
+  // calculating the results
+  let result = hst.doMath( parseInt(startSize), parseInt(hstElem));
+  let result2Frac = hst.toFraction(result);
+
+  // presenting the results
   resultParent.innerHTML = "";
-
-  if ( typeof hstElem == NaN | typeof startBlockSize == NaN ) {
-    message.innerHTML = "Error occurred. Please check the form.";
-  } else {
-    let result = hst.doMath( parseInt(startBlockSize), parseInt(hstElem));
-    let result2Frac = hst.toFraction(result);
-    message.innerHTML = result2Frac + "&quot;";
-  }
-
+  message.innerHTML = result2Frac + "&quot;";
   resultParent.appendChild(message);
 }
 
