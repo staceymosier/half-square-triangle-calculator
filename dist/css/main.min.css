@@ -6431,7 +6431,7 @@ label.panel-block {
 
 body {
   background-color: #e6e9ec; }
-  body section.light {
+  body .light {
     background-color: #f7fafb; }
 
 .quilt .quilt-block {
