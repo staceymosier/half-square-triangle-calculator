@@ -9,7 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-   <header class="section">
+   <header class="section light">
      <div class="container">
        <div class="columns">
          <div class="is-three-fifths is-offset-one-fifth column">
@@ -23,7 +23,7 @@
 
   <section class="section main">
     <div class="container content">
-      <div class="columns">
+      <div class="columns hst-calculator">
         <div class="column">
           <h3 class="display">Let's get started!</h3>
 
@@ -65,7 +65,23 @@
            </div>
          </div><!--//.end hst-method-type -->
          <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
-         <hr />
+        </div><!--//.column -->
+        <div class="column">
+          <h3 class="display"> Finished HSTs </h3>
+          <div id="hst-results" class="result block">
+             <!-- created after you hit GO -->
+          </div>
+        </div><!--//.column -->
+      </div><!--//.columns -->
+    </div><!--//.container-->
+
+    <section class="section light">
+       A section goes here.
+    </section>
+
+    <div class="container">
+      <div class="columns quilt-builder">
+        <div class="column">
          <h3 class="display">How many blocks will you need?</h3>
           <p>Options:</p>
           <p>Round up to the nearest 1/4, 1/8th, or 1/16th ?</p>
@@ -128,10 +144,9 @@
 
           <!-- end quilt form -->
         </div><!--//.column -->
-
         <div class="column">
           <h3 class="display"> Finished Blocks Results </h3>
-          <div id="results" class="result block">
+          <div id="quilt-results" class="result block">
           </div>
           <div class="quilt">
             <div class="border">
@@ -139,12 +154,11 @@
             </div>
           </div>
         </div><!--//.column -->
-
       </div><!--//.columns -->
     </div>
   </section>
 
-  <footer class="footer section">
+  <footer class="footer section light">
     <div class="container">
       <div class="columns">
         <div class="column shout-outs">

@@ -5,7 +5,7 @@ const buildQuilt = () => {
   // form/doc input
   let startSize = document.querySelector("#block-size").value;
   let hstElem = document.querySelector("#hst-method-type").value;
-  let resultParent = document.querySelector("#results");
+  let resultParent = document.querySelector("#hst-results");
   let message = document.createElement("p");
 
   // calculating the results

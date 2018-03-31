@@ -6431,6 +6431,8 @@ label.panel-block {
 
 body {
   background-color: #e6e9ec; }
+  body section.light {
+    background-color: #f7fafb; }
 
 .quilt .quilt-block {
   shape-outside: circle(250px at 50% 50%) padding-box; }
