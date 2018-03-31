@@ -6434,7 +6434,13 @@ body {
   body .light {
     background-color: #f7fafb; }
 
-.quilt .quilt-block {
-  shape-outside: circle(250px at 50% 50%) padding-box; }
+svg.svg-hst rect {
+  stroke: #1b1442; }
+svg.svg-hst polygon {
+  fill: #1b1442; }
+
+body section .display {
+  font-weight: 600;
+  color: #1b1442; }
 
 /*# sourceMappingURL=main.min.css.map */

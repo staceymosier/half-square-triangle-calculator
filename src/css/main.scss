@@ -4,8 +4,10 @@
 @import "../../node_modules/bulma/bulma.sass";
 @import url("https://use.typekit.net/svf0rss.css");
 
+$primary: #1b1442;
 $slate: #e6e9ec;
 $light: #f7fafb;
 
 @import "./elements.scss";
+@import "./type.scss";
 @import "./quilt.scss";

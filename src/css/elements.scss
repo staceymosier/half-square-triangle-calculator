@@ -5,3 +5,16 @@ body {
     background-color: $light;
   }
 }
+
+svg {
+
+  &.svg-hst {
+    rect {
+      stroke: $primary;
+    }
+    polygon {
+      fill: $primary;
+    }
+  }
+
+}

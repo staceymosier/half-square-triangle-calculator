@@ -6,7 +6,8 @@
     <title>Half Square Triangles Calculator - hst.staceymosier.com</title>
     <meta name="description" content="A simple site to assist in the math needed for creating half square triangles for your quilt."/>
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/main.min.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
@@ -14,11 +15,24 @@
    <header class="section light">
      <div class="container">
        <div class="columns">
-         <div class="is-three-fifths is-offset-one-fifth column">
+
+         <div class="hst-graphic column is-narrow">
+           <svg width="120" height="120" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg" class="svg-hst">
+
+             <rect x="0" y="0" width="100%" height="100%"
+             stroke="black" stroke-width="5"
+             fill="none"/>
+
+             <polygon points="0 0, 100 100, 0 100"/>
+           </svg>
+         </div><!--//end .hst-graphic-->
+         <div class="hst-info column">
            <h1 class="display title is-centered">Half-Square Triangle Magic</h1>
            <p>There are currently 3 methods supported for calculating your starter squares.</p>
            <p>You can create 2, 4 or 8 half square triangles starting with 2 larger squares of fabric.</p>
          </div>
+
        </div>
      </div>
    </header>
