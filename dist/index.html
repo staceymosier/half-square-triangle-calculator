@@ -14,8 +14,6 @@
        <div class="columns">
          <div class="is-three-fifths is-offset-one-fifth column">
            <h1 class="display title is-centered">Half-Square Triangle Magic</h1>
-           <p>Use the form below to calculate which size blocks you
-           should begin with in order to make half-square triangle blocks.</p>
            <p>There are currently 3 methods supported for calculating your starter squares.</p>
            <p>You can create 2, 4 or 8 half square triangles starting with 2 larger squares of fabric.</p>
          </div>
@@ -29,6 +27,9 @@
         <div class="column">
           <h3 class="display">Let's get started!</h3>
 
+          <p>Use this form below to calculate the finished block size per HST method.</p>
+          <p>The result is rounded down to the nearest 1/16th <br/>
+          assuming you will trim the final blocks to the same size.</p>
           <div><em>All values below are in inches.</em></div>
 
           <!-- i dont know why bulma requires so many divs -->
@@ -39,7 +40,7 @@
           <div class="field-body">
             <div class="field is-narrow">
               <div class="control">
-                <input class="input" type="text" name="block-size" id="block-size" value="5">
+                <input class="input" type="text" name="block-size" id="block-size" value="10">
               </div>
              </div>
            </div>
@@ -61,9 +62,11 @@
            </div>
          </div><!--//.end hst-method-type -->
          <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
-
          <hr />
          <h3 class="display">How many blocks will you need?</h3>
+          <p>Options:</p>
+          <p>Round up to the nearest 1/4, 1/8th, or 1/16th ?</p>
+          <p>Fabric Width: 36″, 45″, 54″, 60″, 72″, and 118″</p>
           <div class="field is-horizontal quilt-size">
             <div class="field-label is-normal">
               <label class="label" for="quilt-size">Quilt Size</label>
@@ -143,7 +146,7 @@
       <div class="columns">
         <div class="column shout-outs">
           <h4 class="title display">Shout Outs</h4>
-          <p>To the quilters and bloggers that have already made this math available </p>
+          <p>To the quilters that have already made this math available </p>
           <ul>
             <li>
               <a href="http://www.blossomheartquilts.com/2012/07/hst-tutorial-and-maths-formula/">
