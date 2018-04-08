@@ -9,7 +9,7 @@ const buildQuilt = () => {
   let message = document.createElement("p");
 
   // calculating the results
-  let result = hst.doMath( parseInt(startSize), parseInt(hstElem));
+  let result = hst.doMath( parseFloat(startSize), parseInt(hstElem));
   let result2Frac = hst.toFraction(result);
 
   // presenting the results

@@ -35,7 +35,7 @@ const doMath = (startsize, hstmethod) => {
 
 const toFraction = (size) => {
   let whole = Math.floor(size);
-  
+
   let decimal = round(size - whole, 3);
   console.log('decimal ' + decimal);
 
