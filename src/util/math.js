@@ -37,13 +37,13 @@ const toFraction = (size) => {
   let whole = Math.floor(size);
 
   let decimal = round(size - whole, 3);
-  console.log('decimal ' + decimal);
+  // console.log('decimal ' + decimal);
 
   let matches = cleanFractions.filter(value => value <= decimal);
-  console.log(matches);
+  // console.log(matches);
 
   let match = (matches.length == 0 ? 0 : matches[matches.length - 1]);
-  console.log('match ' + match);
+  // console.log('match ' + match);
 
   let answer = whole + ' ' + n2f(match);   console.log(n2f(match));
   return answer;
