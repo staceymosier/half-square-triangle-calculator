@@ -18,3 +18,17 @@ svg {
   }
 
 }
+
+.section-collapser {
+  position: relative;
+  left: 50%;
+  top: 25px;
+
+  svg {
+    fill: $primary;
+    &:hover {
+      fill: $secondary;
+    }
+  }
+
+}

@@ -6439,6 +6439,15 @@ svg.svg-hst rect {
 svg.svg-hst polygon {
   fill: #1b1442; }
 
+.section-collapser {
+  position: relative;
+  left: 50%;
+  top: 25px; }
+  .section-collapser svg {
+    fill: #1b1442; }
+    .section-collapser svg:hover {
+      fill: #f3663e; }
+
 body section .display {
   font-weight: 600;
   color: #1b1442; }
