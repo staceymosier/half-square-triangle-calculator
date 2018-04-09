@@ -14,7 +14,7 @@ const buildQuilt = () => {
 
   // presenting the results
   resultParent.innerHTML = "";
-  message.innerHTML = result2Frac + "&quot;";
+  message.innerHTML = "You will make " + parseInt(hstElem) + " <strong>" + result2Frac + "&quot;</strong> blocks.";
   resultParent.appendChild(message);
 }
 
