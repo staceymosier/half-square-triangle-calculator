@@ -6439,17 +6439,36 @@ svg.svg-hst rect {
 svg.svg-hst polygon {
   fill: #1b1442; }
 
-.section-collapser {
+.hst-main {
+  /* make room for the section divider icon */
+  padding-top: 80px; }
+
+.section-icon {
   position: relative;
-  left: 50%;
-  top: 25px; }
-  .section-collapser svg {
-    fill: #1b1442; }
-    .section-collapser svg:hover {
-      fill: #f3663e; }
+  left: calc(50% - 50px);
+  top: 50px; }
+  .section-icon.circle {
+    width: 100px;
+    height: 100px;
+    background: #f3663e;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; }
+  .section-icon svg.sewing {
+    position: relative;
+    top: calc(50% - 37px);
+    left: calc(50% - 35px); }
 
 body section .display {
   font-weight: 600;
   color: #1b1442; }
+
+.column.ampersand:before {
+  content: '&';
+  font-size: 14rem;
+  line-height: 14rem;
+  opacity: 0.15;
+  color: #ec6943;
+  font-family: serif; }
 
 /*# sourceMappingURL=main.min.css.map */

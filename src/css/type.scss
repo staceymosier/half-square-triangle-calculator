@@ -6,3 +6,17 @@ body {
     }
   }
 }
+
+
+.column {
+
+  &.ampersand:before {
+    content: '&';
+    font-size: 14rem;
+    line-height: 14rem;
+    opacity: 0.15;
+    color: #ec6943;
+    font-family: serif;
+  }
+
+}

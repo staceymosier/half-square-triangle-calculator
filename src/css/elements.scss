@@ -19,16 +19,28 @@ svg {
 
 }
 
-.section-collapser {
-  position: relative;
-  left: 50%;
-  top: 25px;
+.hst-main {
+  /* make room for the section divider icon */
+  padding-top: 80px;
+}
 
-  svg {
-    fill: $primary;
-    &:hover {
-      fill: $secondary;
+.section-icon {
+    position:relative;
+    left: calc(50% - 50px);
+    top:50px;
+
+    &.circle {
+        width: 100px;
+        height: 100px;
+        background: $secondary;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
     }
-  }
 
+    svg.sewing {
+      position: relative;
+      top: calc(50% - 37px);
+      left: calc(50% - 35px);
+    }
 }
