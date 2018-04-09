@@ -6439,7 +6439,9 @@ svg.svg-hst rect {
 svg.svg-hst polygon {
   fill: #1b1442; }
 
-.hst-main {
+.hst-main,
+.quilt-main,
+footer.footer {
   /* make room for the section divider icon */
   padding-top: 80px; }
 
@@ -6450,7 +6452,7 @@ svg.svg-hst polygon {
   .section-icon.circle {
     width: 100px;
     height: 100px;
-    background: #f3663e;
+    background: #f5b4a1;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px; }
@@ -6458,6 +6460,10 @@ svg.svg-hst polygon {
     position: relative;
     top: calc(50% - 37px);
     left: calc(50% - 35px); }
+  .section-icon svg.scissors {
+    position: relative;
+    top: calc(50% - 35px);
+    left: calc(50% - 37px); }
 
 body section .display {
   font-weight: 600;
@@ -6467,8 +6473,7 @@ body section .display {
   content: '&';
   font-size: 14rem;
   line-height: 14rem;
-  opacity: 0.15;
-  color: #ec6943;
+  color: #f5b4a1;
   font-family: serif; }
 
 /*# sourceMappingURL=main.min.css.map */

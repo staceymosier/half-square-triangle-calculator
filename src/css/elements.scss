@@ -19,7 +19,9 @@ svg {
 
 }
 
-.hst-main {
+.hst-main,
+.quilt-main,
+footer.footer {
   /* make room for the section divider icon */
   padding-top: 80px;
 }
@@ -42,5 +44,11 @@ svg {
       position: relative;
       top: calc(50% - 37px);
       left: calc(50% - 35px);
+    }
+
+    svg.scissors {
+      position: relative;
+      top: calc(50% - 35px);
+      left: calc(50% - 37px);
     }
 }
