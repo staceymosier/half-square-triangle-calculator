@@ -6438,6 +6438,36 @@ svg.svg-hst rect {
   stroke: #1b1442; }
 svg.svg-hst polygon {
   fill: #1b1442; }
+svg .dashed {
+  fill: none;
+  stroke-dasharray: 8;
+  stroke: #f78260;
+  stroke-width: 2; }
+svg .drawn {
+  fill: none;
+  stroke: #72d5e4;
+  stroke-width: 2; }
+
+span.tag-drawn {
+  background-color: #72d5e4; }
+span.tag-dashed {
+  background-color: #f78260; }
+
+ol.custom-counter {
+  list-style-type: none; }
+  ol.custom-counter li {
+    counter-increment: step-counter;
+    line-height: 2rem;
+    font-size: 1rem; }
+  ol.custom-counter li::before {
+    content: counter(step-counter) ".";
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: #0d1975;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: "bagatela",serif; }
 
 .hst-main,
 .quilt-main,
