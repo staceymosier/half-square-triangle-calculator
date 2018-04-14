@@ -30,6 +30,9 @@ svg {
     stroke-width: 2;
   }
 
+  .outline {
+    fill: $primary;
+  }
 
 }
 
@@ -44,6 +47,7 @@ span {
 
 ol.custom-counter {
   list-style-type: none;
+  margin-left: 0;
 
   li {
     counter-increment: step-counter;

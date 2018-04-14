@@ -6447,6 +6447,8 @@ svg .drawn {
   fill: none;
   stroke: #72d5e4;
   stroke-width: 2; }
+svg .outline {
+  fill: #1b1442; }
 
 span.tag-drawn {
   background-color: #72d5e4; }
@@ -6454,7 +6456,8 @@ span.tag-dashed {
   background-color: #f78260; }
 
 ol.custom-counter {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 0; }
   ol.custom-counter li {
     counter-increment: step-counter;
     line-height: 2rem;
