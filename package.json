@@ -21,6 +21,7 @@
   "homepage": "https://github.com/staceymosier/half-square-triangle-calculator#readme",
   "dependencies": {
     "bulma": "^0.6.2",
+    "lit-html": "^0.9.0",
     "lodash": "^4.17.5",
     "num2fraction": "^1.2.2",
     "svg.js": "^2.6.4"

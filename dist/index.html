@@ -182,13 +182,40 @@
       </div><!--//.columns -->
     </div><!--//.container-->
   </section>
-
-  <section class="section" id="hst-instructions">
+  <section class="section" id="hst-playground">
     <div class="container content">
       <h3 class="display">Playground</h3>
-      Block Grid:  4, 9, 16 <br>
-      Click to change block from HST to Solid <br>
-      Rotate Block <br>
+      <div class="columns">
+        <div id="playground-form" class="column">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="colorA">Color A</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="color" name="colorA" id="colorA" value="#000000">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="colorA">Color B</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="color" name="colorB" id="colorB" value="#ffffff">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button name="play-go" id="play-go" type="submit" class="button is-primary">Go!</button>
+        </div>
+        <div id="playground-area" class="column">
+        </div>
+      </div>
     </div>
   </section>
 
