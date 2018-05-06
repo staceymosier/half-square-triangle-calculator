@@ -78,9 +78,6 @@
            <h4 class="display">Quad (4 HSTs) Method</h4>
 
            <svg class="svg-hst4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.21 400.85">
-             <defs>
-               <style>.a{fill:#fff;}.a,.b{stroke:#000;stroke-miterlimit:10;}.b{fill:none;stroke-dasharray:8;}</style>
-             </defs>
              <title>hst4</title>
              <rect x="0 "y="0" fill="white" style="width:100%" />
              <line class="drawn" x1="0.35" y1="0.5" x2="400.35" y2="400.5"/>
@@ -94,9 +91,6 @@
            <h4 class="display">Octo (8 HSTs) Method</h4>
 
            <svg class="svg-hst8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.46 401.46">
-             <defs>
-               <style>.a,.c,.d,.e{stroke:#000;stroke-miterlimit:10;}.c,.d,.e{fill:none;}.d{stroke-dasharray:7.94 7.94;}.e{stroke-dasharray:7.95 7.95;}</style>
-             </defs>
              <title>hst8</title>
              <rect x="0 "y="0" fill="white" style="width:100%" />
              <line class="drawn" x1="0.73" y1="201.08" x2="400.73" y2="201.08"/>
@@ -133,28 +127,45 @@
     <div class="container content">
       <div class="columns hst-calculator">
         <div class="column">
-          <h3 class="display">Calculate Finished Size</h3>
-          <p class="is-small">The result is rounded down to the nearest 1/16th <br/>
-          assuming you will trim the final blocks, when necessary, to meet the size. <br />
-          All values below are in inches.</p>
+          <h3 class="display">Calculate Size</h3>
+          <p class="is-small">
+            The result is rounded down to the nearest 1/16th <br/>
+            All values below are in inches.
+          </p>
           <hr/>
+
+          <div class="field is-horizontal calc-direction">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="calc-direction" value="start" checked>
+                 Starting @
+              </label>
+              <label class="radio">
+                <input type="radio" name="calc-direction" value="finish" >
+                 Finish @
+              </label>
+            </div>
+          </div>
 
           <!-- i dont know why bulma requires so many divs -->
           <div class="field is-horizontal block-size">
             <div class="field-label is-normal">
-              <label class="label" for="block-size">Start @</label>
-          </div>
-          <div class="field-body">
-            <div class="field is-narrow">
-              <div class="control">
-                <input class="input" type="number" name="block-size" id="block-size"
+              <label class="label" for="block-size">Size</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input class="input" type="number" name="block-size" id="block-size"
                        pattern = "[1-9\.]+" min="1"
-                       title="Only numbers greater than 0"
-                       >
-              </div>
+                       title="Only numbers greater than 0">
+                </div>
+                <div class="select is-fullwidth">
+                  <select name="block-size-frac" id="block-size-frac">
+                  </select>
+                </div>
+               </div>
              </div>
-           </div>
-         </div><!--//.end block size-->
+           </div><!--//.end block size-->
 
          <div class="field is-horizontal hst-method-type">
            <div class="field-label is-normal">
@@ -171,6 +182,7 @@
              </div>
            </div>
          </div><!--//.end hst-method-type -->
+
          <button name="hst-go" id="hst-go" type="submit" class="button is-primary">Go!</button>
         </div><!--//.column -->
         <div class="column">

@@ -13,21 +13,33 @@ const round = (value, decimals) => {
   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
 
-const doMath = (startsize, hstmethod) => {
+const doMath = (startsize, hstmethod, calcType) => {
   if ( hstmethod === 2 ) {
     // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
-    return startsize - 0.875;
+    if (calcType === "start" ) {
+      return startsize - 0.875;
+    } else {
+      return startsize + 0.875;
+    }
   }
 
   if ( hstmethod === 4 ) {
     // Alternative: To make 4 HST units
     // note: To figure out the math, divide the unfinished HST size by 0.64.
-    return (0.7071 * startsize) - 0.3535;
+    if (calcType === "start" ) {
+      return (0.7071 * startsize) - 0.3535;
+    } else {
+      return startsize * 0.64;
+    }
   }
 
   if ( hstmethod === 8 ){
     // Octo-Awesome Add .0875 and double it
-    return (startsize / 2) - 0.877;
+    if (calcType === "start") {
+      return (startsize / 2) - 0.875;
+    } else {
+      return (startsize * 2) + 0.875;
+    }
   }
 
   return 0;
@@ -35,16 +47,9 @@ const doMath = (startsize, hstmethod) => {
 
 const toFraction = (size) => {
   let whole = Math.floor(size);
-
   let decimal = round(size - whole, 3);
-  // console.log('decimal ' + decimal);
-
   let matches = cleanFractions.filter(value => value <= decimal);
-  // console.log(matches);
-
   let match = (matches.length == 0 ? 0 : matches[matches.length - 1]);
-  // console.log('match ' + match);
-
   let answer = whole + ' ' + n2f(match);   console.log(n2f(match));
   return answer;
 };
