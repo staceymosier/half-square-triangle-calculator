@@ -36,6 +36,11 @@ svg {
 
 }
 
+.button.is-primary {
+    background-color: $primary;
+}
+
+
 span {
   &.tag-drawn {
     background-color: $primary-light;

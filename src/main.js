@@ -1,6 +1,6 @@
 import form from './form/form.js';
 import quilt from './quilt/quilt.js';
-import playground from './playground/playground.js';
+// import playground from './playground/playground.js';
 
 form.buildForm();
 
@@ -9,4 +9,4 @@ button.addEventListener("click", ()=> {
   quilt.buildQuilt();
 });
 
-playground.play();
+// playground.play();

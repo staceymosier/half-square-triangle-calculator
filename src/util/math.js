@@ -25,11 +25,12 @@ const doMath = (startsize, hstmethod, calcType) => {
 
   if ( hstmethod === 4 ) {
     // Alternative: To make 4 HST units
-    // note: To figure out the math, divide the unfinished HST size by 0.64.
+    // .7071x - 0.3535 = y
     if (calcType === "start" ) {
-      return (0.7071 * startsize) - 0.3535;
+      return (0.7071 * startsize) - .3535;
     } else {
-      return startsize * 0.64;
+      //return startsize * 1.64;
+      return (startsize + .3535) / .7071;
     }
   }
 
@@ -50,7 +51,7 @@ const toFraction = (size) => {
   let decimal = round(size - whole, 3);
   let matches = cleanFractions.filter(value => value <= decimal);
   let match = (matches.length == 0 ? 0 : matches[matches.length - 1]);
-  let answer = whole + ' ' + n2f(match);   console.log(n2f(match));
+  let answer = whole + ' ' + n2f(match);
   return answer;
 };
 

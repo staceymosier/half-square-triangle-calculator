@@ -25,22 +25,22 @@ let hstMethods = [
 
 /* Clean Fraction */
 let fractions = [
-  { text: "", value: "0" },
-  { text: ".0625", value: "1/16" },
-  { text: ".125", value: "1/8" },
-  { text: ".1875", value: "3/16" },
-  { text: ".250", value: "1/4" },
-  { text: ".3125", value: "5/16" },
-  { text: ".375", value: "3/8" },
-  { text: ".4375", value: "7/16" },
-  { text: ".5", value: "1/2" },
-  { text: ".5625", value: "9/16" },
-  { text: ".625", value: "5/8" },
-  { text: ".6875", value: "11/16" },
-  { text: ".75", value: "3/4" },
-  { text: ".8125", value: "13/16" },
-  { text: ".875", value: "7/8" },
-  { text: ".9375", value: "15/16" }
+  { text: "0", value: "" },
+  { text: "1/16", value: ".0625" },
+  { text: "1/8", value: ".125" },
+  { text: "3/16", value: ".1875" },
+  { text: "1/4", value: ".250" },
+  { text: "5/16", value: ".3125" },
+  { text: "3/8", value: ".375" },
+  { text: "7/16", value: ".4375" },
+  { text: "1/2", value: ".5" },
+  { text: "9/16", value: ".5625" },
+  { text: "5/8", value: ".625" },
+  { text: "11/16", value: ".6875" },
+  { text: "3/4", value: ".75" },
+  { text: "13/16", value: ".8125" },
+  { text: "7/8", value: ".875" },
+  { text: "15/16", value: ".9375" },
 ]
 
 const buildForm = () => {
