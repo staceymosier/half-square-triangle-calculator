@@ -15,7 +15,7 @@ const round = (value, decimals) => {
 
 const doMath = (startsize, hstmethod, calcType) => {
   if ( hstmethod === 2 ) {
-    // Traditional: Add ⅞" to the finished size you want. The fraction ⅞" translates to 0.875.
+    // Add ⅞" to the finished size you want.
     if (calcType === "start" ) {
       return startsize - 0.875;
     } else {
@@ -24,7 +24,7 @@ const doMath = (startsize, hstmethod, calcType) => {
   }
 
   if ( hstmethod === 4 ) {
-    // Alternative: To make 4 HST units
+    // Alternative: To make 4 HST units.
     // .7071x - 0.3535 = y
     if (calcType === "start" ) {
       return (0.7071 * startsize) - .3535;

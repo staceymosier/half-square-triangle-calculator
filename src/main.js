@@ -1,12 +1,8 @@
-import form from './form/form.js';
-import quilt from './quilt/quilt.js';
-// import playground from './playground/playground.js';
+import form from './js/form/form-select-lists';
+import quilt from './js/quilt/quilt.js';
 
 form.buildForm();
-
 let button = document.querySelector("#hst-go");
 button.addEventListener("click", ()=> {
   quilt.buildQuilt();
 });
-
-// playground.play();

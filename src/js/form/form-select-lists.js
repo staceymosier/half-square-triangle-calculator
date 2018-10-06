@@ -1,13 +1,12 @@
 import selector from "../util/select.js";
 
-/* user input for quilt */
-let blocksize = document.getElementById("block-size");
-let quiltsize = document.getElementById("quilt-size");
-let hstMethodType = document.getElementById("hst-method-type");
-let blockSizeFrac = document.getElementById("block-size-frac");
+// Select Elements to fill with default options.
+let quiltSizeSelectElem = document.getElementById("quilt-size");
+let hstTypeSelectElem = document.getElementById("hst-method-type");
+let blockSizeSelectElem = document.getElementById("block-size-frac");
 
-/* set up quilt sizes */
-let quiltsizes = [
+// Available quilt sizes.
+let quiltSizes = [
   { text: "Twin", value: [63, 87] },
   { text: "Twin XL", value: [63, 92] },
   { text: "Full", value: [ 78, 87] },
@@ -16,15 +15,15 @@ let quiltsizes = [
   { text: "California King", value: [ 96,96] }
 ];
 
-/* HST method */
+// Half Square Triangle method options.
 let hstMethods = [
   { text: "Make 2 HSTs", value: 2 },
   { text: "Make 4 HSTs", value: 4, selected: true },
   { text: "Make 8 HSTs", value: 8 }
 ]
 
-/* Clean Fraction */
-let fractions = [
+// Clean Fractions to downsize.
+let cleanFractions = [
   { text: "0", value: "" },
   { text: "1/16", value: ".0625" },
   { text: "1/8", value: ".125" },
@@ -44,9 +43,9 @@ let fractions = [
 ]
 
 const buildForm = () => {
-  selector.build(quiltsizes, quiltsize);
-  selector.build(hstMethods, hstMethodType);
-  selector.build(fractions, blockSizeFrac);
+  selector.build(quiltSizes, quiltSizeSelectElem);
+  selector.build(hstMethods, hstTypeSelectElem);
+  selector.build(cleanFractions, blockSizeSelectElem);
 }
 
 export default { buildForm };
