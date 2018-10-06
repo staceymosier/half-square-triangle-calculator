@@ -7,9 +7,7 @@ body {
   }
 }
 
-
 .column {
-
   &.ampersand:before {
     content: '&';
     font-size: 14rem;
@@ -17,5 +15,4 @@ body {
     color: $secondary;
     font-family: serif;
   }
-
 }

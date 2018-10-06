@@ -1,0 +1,106 @@
+body {
+  background-color: $slate;
+
+  .light {
+    background-color: $light;
+  }
+}
+
+/* Layout */
+.hst-main,
+.quilt-main,
+footer.footer {
+  padding-top: 80px;
+}
+
+/* Buttons */
+.button {
+  &.is-primary {
+    background-color: $primary;
+  }
+}
+
+/* Lists */
+.custom-counter {
+  list-style-type: none;
+  margin-left: 0;
+
+  li {
+    counter-increment: step-counter;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  li::before {
+    content: counter(step-counter) ".";
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color:#0d1975;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family:"bagatela",serif;
+  }
+}
+
+/* Sections */
+.section-icon {
+  position:relative;
+  left: calc(50% - 50px);
+  top:50px;
+
+  &.circle {
+      width: 100px;
+      height: 100px;
+      background: $secondary;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+  }
+  .sewing {
+    position: relative;
+    top: calc(50% - 37px);
+    left: calc(50% - 35px);
+  }
+  .scissors {
+    position: relative;
+    top: calc(50% - 35px);
+    left: calc(50% - 37px);
+  }
+}
+
+/* Spans */
+span {
+  &.tag-drawn {
+    background-color: $primary-light;
+  }
+  &.tag-dashed {
+    background-color: $secondary-dark;
+  }
+}
+
+/* SVG */
+svg {
+  &.svg-hst {
+    rect {
+      stroke: $primary;
+    }
+    polygon {
+      fill: $primary;
+    }
+  }
+  .dashed {
+    fill: none;
+    stroke-dasharray: 8;
+    stroke: $secondary-dark;
+    stroke-width: 2;
+  }
+  .drawn {
+    fill: none;
+    stroke: $primary-light;
+    stroke-width: 2;
+  }
+  .outline {
+    fill: $primary;
+  }
+}
