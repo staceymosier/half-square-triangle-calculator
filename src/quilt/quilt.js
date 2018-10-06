@@ -16,7 +16,7 @@ const writeResults = (hstElem, result, resultParent, calcType, totalStartSize) =
   if (calcType === "start") {
     message.innerHTML = "You will make [" + parseInt(hstElem) + "] " + value + " blocks<br/> when you start with " + startValue + " blocks.";
   } else {
-    message.innerHTML = "You will need to start at " + value + "<br/> to make [" + parseInt(hstElem) + "] " + startValue + " &quot; blocks.";
+    message.innerHTML = "You will need to start at " + value + "<br/> to make [" + parseInt(hstElem) + "] " + startValue + " blocks.";
   }
   resultParent.appendChild(message);
   return;

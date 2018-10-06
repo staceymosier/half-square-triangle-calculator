@@ -51,7 +51,7 @@ const toFraction = (size) => {
   let decimal = round(size - whole, 3);
   let matches = cleanFractions.filter(value => value <= decimal);
   let match = (matches.length == 0 ? 0 : matches[matches.length - 1]);
-  let answer = whole + ' ' + n2f(match);
+  let answer = whole + ' ' + (match === 0 ? '' : n2f(match));
   return answer;
 };
 
