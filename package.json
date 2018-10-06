@@ -4,9 +4,9 @@
   "description": "Half Square Triangle Calculator for Quilting Projects",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/jest  --config jest.config.json",
     "start": "parcel ./src/index.html",
-    "push": "aws s3 cp ./dist/ s3://hst.staceymosier.com/v2 --recursive"
+    "push": "aws s3 cp ./dist/ s3://hst.staceymosier.com --recursive"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "jest": "^23.6.0",
     "node-sass": "^4.9.3"
   }
 }
